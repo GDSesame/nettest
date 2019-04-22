@@ -15,6 +15,8 @@
 		6634E70B226734930095A51A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634E70A226734930095A51A /* main.m */; };
 		6634E715226734930095A51A /* NetworkTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634E714226734930095A51A /* NetworkTestTests.m */; };
 		6634E720226734930095A51A /* NetworkTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6634E71F226734930095A51A /* NetworkTestUITests.m */; };
+		66EF155022685EA5008228A0 /* Networkapiclient.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EF154F22685EA5008228A0 /* Networkapiclient.m */; };
+		C14AFD1ADEE183A1AD772038 /* libPods-NetworkTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 346F742E3125104FCADBE1EF /* libPods-NetworkTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B1591F99F2AA92B0AA3849C /* Pods-NetworkTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkTest.release.xcconfig"; path = "Target Support Files/Pods-NetworkTest/Pods-NetworkTest.release.xcconfig"; sourceTree = "<group>"; };
+		346F742E3125104FCADBE1EF /* libPods-NetworkTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NetworkTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		475E37F19014F4EBED1E414F /* Pods-NetworkTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkTest.debug.xcconfig"; path = "Target Support Files/Pods-NetworkTest/Pods-NetworkTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6634E6F82267348F0095A51A /* NetworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634E6FB2267348F0095A51A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6634E6FC2267348F0095A51A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		6634E71B226734930095A51A /* NetworkTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6634E71F226734930095A51A /* NetworkTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkTestUITests.m; sourceTree = "<group>"; };
 		6634E721226734930095A51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66EF154E22685EA5008228A0 /* Networkapiclient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Networkapiclient.h; sourceTree = "<group>"; };
+		66EF154F22685EA5008228A0 /* Networkapiclient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Networkapiclient.m; sourceTree = "<group>"; };
+		66EF155122685EE3008228A0 /* NetworkCommenHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCommenHeader.h; sourceTree = "<group>"; };
+		66EF1552226862AC008228A0 /* GDPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C14AFD1ADEE183A1AD772038 /* libPods-NetworkTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3463DF8E5618DB85BCB551DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				346F742E3125104FCADBE1EF /* libPods-NetworkTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6634E6EF2267348F0095A51A = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +103,8 @@
 				6634E713226734930095A51A /* NetworkTestTests */,
 				6634E71E226734930095A51A /* NetworkTestUITests */,
 				6634E6F92267348F0095A51A /* Products */,
+				7B3B4EB3F3256CDDA57EFB24 /* Pods */,
+				3463DF8E5618DB85BCB551DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +121,7 @@
 		6634E6FA2267348F0095A51A /* NetworkTest */ = {
 			isa = PBXGroup;
 			children = (
+				66EF154D22685E63008228A0 /* network */,
 				6634E6FB2267348F0095A51A /* AppDelegate.h */,
 				6634E6FC2267348F0095A51A /* AppDelegate.m */,
 				6634E6FE2267348F0095A51A /* ViewController.h */,
@@ -110,6 +131,7 @@
 				6634E706226734930095A51A /* LaunchScreen.storyboard */,
 				6634E709226734930095A51A /* Info.plist */,
 				6634E70A226734930095A51A /* main.m */,
+				66EF1552226862AC008228A0 /* GDPrefixHeader.pch */,
 			);
 			path = NetworkTest;
 			sourceTree = "<group>";
@@ -132,6 +154,25 @@
 			path = NetworkTestUITests;
 			sourceTree = "<group>";
 		};
+		66EF154D22685E63008228A0 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				66EF154E22685EA5008228A0 /* Networkapiclient.h */,
+				66EF154F22685EA5008228A0 /* Networkapiclient.m */,
+				66EF155122685EE3008228A0 /* NetworkCommenHeader.h */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		7B3B4EB3F3256CDDA57EFB24 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				475E37F19014F4EBED1E414F /* Pods-NetworkTest.debug.xcconfig */,
+				1B1591F99F2AA92B0AA3849C /* Pods-NetworkTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +180,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6634E724226734930095A51A /* Build configuration list for PBXNativeTarget "NetworkTest" */;
 			buildPhases = (
+				80FB85E49CA0C9570F908D6F /* [CP] Check Pods Manifest.lock */,
 				6634E6F42267348F0095A51A /* Sources */,
 				6634E6F52267348F0095A51A /* Frameworks */,
 				6634E6F62267348F0095A51A /* Resources */,
@@ -257,11 +299,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80FB85E49CA0C9570F908D6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6634E6F42267348F0095A51A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66EF155022685EA5008228A0 /* Networkapiclient.m in Sources */,
 				6634E7002267348F0095A51A /* ViewController.m in Sources */,
 				6634E70B226734930095A51A /* main.m in Sources */,
 				6634E6FD2267348F0095A51A /* AppDelegate.m in Sources */,
@@ -433,10 +501,14 @@
 		};
 		6634E725226734930095A51A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475E37F19014F4EBED1E414F /* Pods-NetworkTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBY7QJ5S5N;
+				GCC_PREFIX_HEADER = NetworkTest/GDPrefixHeader.pch;
 				INFOPLIST_FILE = NetworkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,10 +521,14 @@
 		};
 		6634E726226734930095A51A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B1591F99F2AA92B0AA3849C /* Pods-NetworkTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBY7QJ5S5N;
+				GCC_PREFIX_HEADER = NetworkTest/GDPrefixHeader.pch;
 				INFOPLIST_FILE = NetworkTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
