@@ -19,6 +19,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor redColor];
     //zhellijiushi zengjia de yige zhuyshhi 
+    //这是别人更新的  要你去update的
 }
 
 
